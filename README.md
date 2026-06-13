@@ -19,7 +19,7 @@ import {
   normalizeBinaryPathForWsl
 } from 'wsl-support'
 
-// True only inside WSL , guards against false positives on
+// True only inside WSL. Guards against false positives on
 // native Windows where WSLENV may be set.
 isWslEnv()
 
@@ -41,7 +41,7 @@ Returns `true` when the current process runs inside WSL. Checks `WSL_DISTRO_NAME
 
 ### `hasGuiDisplay(): boolean`
 
-Returns `true` when `DISPLAY` or `WAYLAND_DISPLAY` is set , i.e. a GUI program can actually open a window (WSLg, X server, etc.).
+Returns `true` when `DISPLAY` or `WAYLAND_DISPLAY` is set, i.e. a GUI program can actually open a window (WSLg, X server, etc.).
 
 ### `normalizeBinaryPathForWsl(input: string): string`
 
