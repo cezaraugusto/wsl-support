@@ -1,0 +1,59 @@
+{
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cezaraugusto/wsl-support.git"
+  },
+  "name": "wsl-support",
+  "version": "0.1.0",
+  "description": "Detect WSL, GUI display availability, and normalize Windows binary paths for use inside WSL.",
+  "homepage": "https://www.npmjs.com/package/wsl-support",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "biome format --write",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build",
+    "publish:provenance": "np patch --no-tests --any-branch --yolo --message 'release: %s' --provenance"
+  },
+  "publishConfig": {
+    "provenance": true
+  },
+  "author": {
+    "name": "Cezar Augusto",
+    "email": "boss@cezaraugusto.net",
+    "url": "https://cezaraugusto.net"
+  },
+  "keywords": [
+    "wsl",
+    "wsl2",
+    "wslg",
+    "windows-subsystem-for-linux",
+    "mnt",
+    "path",
+    "gui",
+    "display",
+    "detect"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@rslib/core": "^0.6.9",
+    "@types/node": "^22.8.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
