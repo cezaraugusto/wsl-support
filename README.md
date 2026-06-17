@@ -1,6 +1,13 @@
-# wsl-support
+[npm-version-image]: https://img.shields.io/npm/v/wsl-support.svg?color=0971fe
+[npm-version-url]: https://www.npmjs.com/package/wsl-support
+[npm-downloads-image]: https://img.shields.io/npm/dm/wsl-support.svg?color=2ecc40
+[npm-downloads-url]: https://www.npmjs.com/package/wsl-support
+[action-image]: https://github.com/cezaraugusto/wsl-support/actions/workflows/ci.yml/badge.svg?branch=main
+[action-url]: https://github.com/cezaraugusto/wsl-support/actions
 
 > Detect WSL, GUI display availability, and normalize Windows binary paths for use inside WSL.
+
+# wsl-support [![Version][npm-version-image]][npm-version-url] [![Downloads][npm-downloads-image]][npm-downloads-url] [![workflow][action-image]][action-url]
 
 Small, zero-dependency helpers for Node.js CLIs that launch GUI programs (browsers, editors, desktop apps) and need to behave correctly under [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/).
 
@@ -49,4 +56,4 @@ Trims and unquotes the input. Inside WSL, converts Windows drive paths (`C:\...`
 
 ## License
 
-MIT (c) Cezar Augusto
+MIT (c) Cezar Augusto.
