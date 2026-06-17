@@ -1,17 +1,19 @@
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import {afterEach, describe, expect, it, vi} from 'vitest'
+
+import {hasGuiDisplay, isWslEnv, normalizeBinaryPathForWsl} from '../src/index.ts'
 
 const releaseMock = vi.hoisted(() => vi.fn(() => '6.8.0-39-generic'))
+
 vi.mock('os', async (importOriginal) => {
   const actual = await importOriginal<typeof import('os')>()
-  return { ...actual, release: releaseMock }
-})
 
-import { hasGuiDisplay, isWslEnv, normalizeBinaryPathForWsl } from '../src/index.ts'
+  return {...actual, release: releaseMock}
+})
 
 const realPlatform = process.platform
 
-function setPlatform(platform: string) {
-  Object.defineProperty(process, 'platform', { value: platform })
+function setPlatform (platform: string) {
+  Object.defineProperty(process, 'platform', {value: platform})
 }
 
 afterEach(() => {
