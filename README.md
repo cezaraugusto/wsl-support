@@ -4,10 +4,12 @@
 [npm-downloads-url]: https://www.npmjs.com/package/wsl-support
 [action-image]: https://github.com/cezaraugusto/wsl-support/actions/workflows/ci.yml/badge.svg?branch=main
 [action-url]: https://github.com/cezaraugusto/wsl-support/actions
+[provenance-image]: https://img.shields.io/badge/provenance-verified-0971fe?logo=npm&logoColor=white
+[provenance-url]: https://www.npmjs.com/package/wsl-support
 
 > Detect WSL, GUI display availability, and normalize Windows binary paths for use inside WSL.
 
-# wsl-support [![Version][npm-version-image]][npm-version-url] [![Downloads][npm-downloads-image]][npm-downloads-url] [![workflow][action-image]][action-url]
+# wsl-support [![Version][npm-version-image]][npm-version-url] [![Downloads][npm-downloads-image]][npm-downloads-url] [![workflow][action-image]][action-url] [![provenance][provenance-image]][provenance-url]
 
 Small, zero-dependency helpers for Node.js CLIs that launch GUI programs (browsers, editors, desktop apps) and need to behave correctly under [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/).
 
