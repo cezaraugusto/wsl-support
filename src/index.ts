@@ -2,9 +2,6 @@ import * as os from 'os'
 
 /**
  * Whether the current process is running inside Windows Subsystem for Linux.
- *
- * Checks the WSL environment variables first and falls back to sniffing
- * the kernel release string for environments where they are unavailable.
  */
 export function isWslEnv (): boolean {
   // Guard against false positives on native Windows where WSLENV may be set
@@ -18,7 +15,6 @@ export function isWslEnv (): boolean {
 
   if (hasWslEnv) return true
 
-  // Fallback heuristic for Linux environments where env vars are unavailable
   return /microsoft/i.test(os.release())
 }
 
