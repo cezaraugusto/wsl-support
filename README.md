@@ -54,6 +54,15 @@ Returns `true` when `DISPLAY` or `WAYLAND_DISPLAY` is set, i.e. a GUI program ca
 
 Trims and unquotes the input. Inside WSL, converts Windows drive paths (`C:\...` or `C:/...`) to `/mnt/<drive>/...`. Outside WSL, returns the unquoted input unchanged.
 
+## Related projects
+
+* [pintor](https://github.com/cezaraugusto/pintor)
+* [log-md](https://github.com/cezaraugusto/log-md)
+* [mklicense](https://github.com/cezaraugusto/mklicense)
+* [prefers-yarn](https://github.com/cezaraugusto/prefers-yarn)
+* [go-git-it](https://github.com/cezaraugusto/go-git-it)
+* [git-precision](https://github.com/cezaraugusto/git-precision)
+
 ## License
 
 MIT (c) Cezar Augusto.
